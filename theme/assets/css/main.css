@@ -1,0 +1,403 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://alvarez.is
+ *
+ * Project Name: Bolt - Free Bootstrap 3 Theme
+ * Version: 1.0
+ * URL: http://blacktie.co
+ */
+ 
+/* FONTS */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
+
+/* OVERALL ASPECT */
+
+body {
+  background-color: #fff5ee;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    
+    margin-top: 50px;
+}
+
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #333;
+}
+
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+/*自画像と名前、文章を中央構え*/
+.centered {
+	text-align: center;
+	    
+}
+
+.hoge {position: relative; 
+  overflow: hidden; /* 下のulのcssでリスト全体を右に50%移動しているので、その分幅が広がってしまいスクロールバーが表示されてしまいます。それを防ぐ為の設定です。 */
+	margin-top: 40px;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+.hoge ul{
+position: relative;
+  left: 50%; /* リスト全体であるul要素を右に50%移動。つまり先頭を中央に持ってくる感じです。 */
+  float: left;
+
+}
+
+.hoge li{
+position: relative;
+  left: -50%; /* 各リスト項目になるli要素を左に50%移動。 */
+  float: left;
+  list-style: none; /* 項目にぼっちを出したくない場合はこれを設定（今回はあんまり関係ないですが） */
+
+}
+
+
+.A p{
+text-align: center;
+
+}
+
+/* Links */
+a {
+    color: #ffffff;/*アイコンの色*/
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #ffff00;/*アイコンにカーソルを置いたときに変わる色。*/
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+/* Bootstrap Modifications */
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+.navbar {
+	height:10px;
+	font-weight: 800;
+	font-size: 14px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #dc143c;
+}
+/*
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #000000;
+	background-color: #74cfae;
+}
+*/
+.navbar-brand {
+	font-size: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+/*.selected
+{
+  color: #ED7000;
+}*/
+
+
+.header-right
+{
+  float: right;
+}
+
+.header-right li 
+{
+  float: left;
+   padding: 10px 30px;
+  border-left: 1px solid #dddddd;
+  color:#ffffff;
+  font-size:15px; 
+}
+
+
+li
+{
+  list-style: none;
+}
+
+
+.btn-theme {
+	color: #ffffff;
+	background-color: #dc143c;
+	border-color: transparent;
+}
+
+.btn {
+	padding: 10px 30px;
+	margin-bottom: 0;
+	font-size: 10px;
+	border: 5px solid transparent;
+	border-radius: 0px;
+    text-align: center;
+}
+
+.buuton-A{
+  text-align: center;
+}
+
+
+.lead {
+	letter-spacing: 1px;
+}
+
+/* WRAP SECTIONS */
+
+/* hello */
+#hello {
+	width: 100%;
+	padding-top: 250px;
+	padding-bottom: 250px;
+}
+
+/*＠icchiyこむ*/
+#hello h1 {
+	font-size: 70px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	color: #dc143c;
+}
+
+#hello h2 {
+	color: #f08080;
+	font-weight: 400;
+	font-size:20px;
+}
+
+/* Green */
+#green {
+	background-color:#d70035;
+	padding-top: 50px;
+	margin-bottom: 0px;
+	text-align: center;
+	background-image:url("assets/img/photo-1428677361686-f9d23be145c9 (1).jpeg");
+}
+
+.gazou{
+	border-radius: 300px;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#green h3 {
+	color: white;
+	font-weight: 400;
+	margin-bottom: 35px;
+}
+
+#green p {
+	color: white;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+/*ABCDEFのところ*/
+.lesson{
+  float: left;
+  width:25%;
+  text-align: center;
+}
+
+.lesson-icon{
+   border-radius: 200px;
+     padding-top: 20px;
+     text-align: center;
+
+}
+
+.txt-contents{
+  width: 90%;
+  display: inline-block;/*innline-block ブラウザの幅に合わせてボックスをいい感じに均等に配置する、グリッドレイアウトを作る事ができる。*/
+  font-size: 15px;
+  color: #333;
+  padding-right:auto; 
+  padding-left::auto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.heading h3{
+  font-weight: normal;
+}
+
+.container {
+     padding-right: 0px; 
+     padding-left: 0px; 
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.heading{
+	text-align: center;
+}
+
+
+
+
+/* Skills */
+#skills {
+	background-color: #b22222;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-top: 50px;
+	border-bottom:solid 1px #ffffff; 
+	position: relative;/*[floatとrelativeはセット]*/
+
+}
+
+#skills h3 {
+	color: white;
+
+}
+
+#skills p {
+	color: white;
+	font-weight: 400;
+}
+
+.col-lg-3 mt{
+	
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width:200;
+}
+
+.col-lg-3 mt p{
+	text-align: right;
+}
+
+
+
+/* Social Links */
+#social {
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+
+}
+
+
+#social i {
+	font-size: 30px;
+	color: ff8c00;
+	}
+
+#social .col-md-3:hover {
+	color: #dc143c;
+
+}
+
+/*#social .col-md-3 {
+	padding:10px;
+	float:left;	
+	width:100px;
+}*/
+
+.social-header{
+	float:left;
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+/*.header-center
+{
+  text-align: center;
+  color: #ff8c00;
+}*/
+.header-center{
+	list-style: none outside none;
+    float: left;
+    margin: 0 0 0 0;
+    padding: 0;
+    position: relative;
+    left: 15%;
+    font-size: 25px;
+}
+/*
+.header-center li
+{
+  float: left;
+  padding-right:30px;
+  padding-left: 30px;
+  border-left: 1px solid #ffffff;
+}*/
+.header-center li{
+	float: left;
+    margin-right: 5px;
+    padding: 5px;
+    position: relative;
+    left: -40%;
+}
+
+
+
+/* Footer */
+#f {
+	padding-top: 20px;
+	background-color: #dc143c;
+	border-top-style: solid 1px #ffffff;
+}
+
+#f p {
+	color: white;
+	text-align: right;
+	font-weight: 400;
+	margin-right: 0px;
+}
+
+/* Image Opacity */
+.grid img {
+    opacity: .7;
+}
+.grid img:hover {
+    opacity: 1;
+}
